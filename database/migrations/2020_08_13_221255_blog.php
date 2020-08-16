@@ -16,7 +16,8 @@ class Blog extends Migration
         Schema::create('blogs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->string('content');
+            $table->string('slug');
+            $table->text('content');
             $table->timestamps();
         });
     }

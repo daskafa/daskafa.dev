@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 // Front
 Route::get('/', 'Front\homepageController@index')->name('homepage');
 Route::get('/blog', 'Front\blogController@index')->name('blog');
+Route::get('/blog/{slug}', 'Front\blogController@single')->name('single');
 
 // Login
 Route::get('/login', 'Back\AuthController@login')->middleware('isLogin')->name('login');

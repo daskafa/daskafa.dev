@@ -21,4 +21,9 @@ class blogController extends Controller
     // }
 
 
+    public function single($slug){
+      $blogs = Blogs::where('slug', $slug)->first();
+      return view('front\single', compact('blogs'));
+    }
+
 } //

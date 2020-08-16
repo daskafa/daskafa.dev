@@ -66,3 +66,22 @@
         </style>
     </head>
     <body>
+
+@if (Request::segment(1) == '')
+  @else
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="menu">
+              <ul>
+                <li>homepage</li>
+                <li>about me kanks</li>
+                <li>birşeyler yazıyorum</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+@endif

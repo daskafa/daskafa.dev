@@ -2,7 +2,12 @@
   use Illuminate\Support\Facades\Auth;
 @endphp
 @include('front.layouts.header')
-@include('front.layouts.widgets')
+
+
+@if (Auth::check())
+  @include('front.layouts.widgets')
+@endif
+
 
       <div class="container">
         <div class="col-md-12">
