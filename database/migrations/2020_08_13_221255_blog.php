@@ -17,6 +17,7 @@ class Blog extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('slug');
+            $table->string('hit')->default(0);
             $table->text('content');
             $table->timestamps();
         });

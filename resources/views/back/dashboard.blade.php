@@ -10,6 +10,13 @@
   <div class="row">
     <div class="col-md-12">
       <div class="center-form">
+      @if ($errors->any())
+        <div class="alert alert-danger">
+          @foreach ($errors->all() as $error)
+            <li>{{$error}}</li>
+          @endforeach
+        </div>
+      @endif      
         <form action="{{route('createPost')}}" method="post" style="width:70%; margin:0 auto;">
           @csrf
           <div class="form-group">

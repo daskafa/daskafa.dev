@@ -373,14 +373,14 @@ textarea {
 .title h3{
   text-align: center;
   font-weight: bold;
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 .content{
   text-align: center;
 }
 .content p{
   text-align: justify;
-  word-break: break-all;
+  word-break: break-word;
 }
 .blog-routes p{
   text-align: center;
@@ -452,6 +452,13 @@ textarea {
   border: 0;
   background-color: #636b6f !important;
 }
+.blog{
+  width: 40%;
+  margin: 0 auto;
+}
+.blog .date-text{
+  margin-right: 20px;
+}
 .blog a,
 .blog a:hover{
   color:inherit;
@@ -461,7 +468,20 @@ textarea {
   height: 3em;
   display: flex;
   align-items: center;
+}
+.header{
+  width: 40%;
+  margin: 0 auto;
   border-bottom: 3px solid #636b6f;
+}
+.header a{
+  text-decoration: none;
+  color: inherit;
+}
+.header a:hover{
+  text-decoration: none;
+  color: #000;
+  transition: .5s;
 }
 .header ul{
   margin: 0;
@@ -471,11 +491,46 @@ textarea {
   margin-left: 1em;
   font-weight: bold;
 }
-.header ul li:first-child{
-  margin-left: 0;
+.header .icon{
+  display: flex;
+  height: 3em;
+  align-items: center;
+  justify-content: flex-end;
 }
-
-
+.header .icon svg{
+  font-size: 25px;
+  margin-right: 1em;
+}
+.header ul li:first-child{
+  /* margin-left: 0; */
+}
+.col-md-3,
+.col-md-9,
+.container{
+  padding: 0 !important;
+}
+.blog-info{
+  display: flex;
+  height: auto;
+  align-items: center;
+  margin-left: 30px;
+}
+.blog-info .icon{
+  font-size: 20px;
+}
+.blog-info p{
+  margin: 0;
+  margin-left: 8px;
+  font-style: italic;
+  font-weight: bold;
+  color: #c3c3c3;
+}
+.blog-info .data-text{
+  display: inline;
+}
+.blog-info svg{
+  color: #c3c3c3;
+}
 
 
 

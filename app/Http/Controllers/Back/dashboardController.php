@@ -16,12 +16,18 @@ class dashboardController extends Controller
     }
 
     public function createPost(Request $request){
+
+      $request->validate([
+        'title' => 'unique:blogs',
+        'content' => 'unique:blogs'
+      ]);
+
       $blogs          = new Blogs();
       $blogs->title   = $request->title;
       $blogs->slug    = Str::slug($request->title);
       $blogs->content = $request->content;
       $blogs->save();
-      return redirect()->back();
+      return redirect()->back();      
     }
 
     public function deletePost(Request $request, $id){

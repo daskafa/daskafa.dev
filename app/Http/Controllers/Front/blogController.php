@@ -15,14 +15,9 @@ class blogController extends Controller
         return view('front\blog', compact('blog'));
     }
 
-    // public function readBlogs(){
-    //   $blogs = Blogs::get();
-    //   return view
-    // }
-
-
     public function single($slug){
       $blogs = Blogs::where('slug', $slug)->first();
+      $blogs->increment('hit');
       return view('front\single', compact('blogs'));
     }
 
