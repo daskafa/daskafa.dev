@@ -12,7 +12,7 @@ class dashboardController extends Controller
 {
     public function index(){
       $blogs = Blogs::orderBy('created_at', 'DESC')->get();
-      return view('back\dashboard', compact('blogs'));
+      return view('back.dashboard', compact('blogs'));
     }
 
     public function createPost(Request $request){
