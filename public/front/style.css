@@ -533,15 +533,119 @@ textarea {
 }
 
 
+.h-header{
+  height: 5em;
+  box-shadow: 0 0 10px #0000001c;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.h-header .header-left{
+  height: auto;
+  position: relative;
+}
+.h-header .header-left p{
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+  border-left: 3px solid #eaeb2d;
+  padding-left: 0.5em;
+  text-shadow: 1px 1px #eee;
+}
+.h-header .header-left span{
+  font-weight: bold;
+  color: #eaeb2d;
+}
+.h-header .header-center{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+.h-header .header-center nav{
+  padding: 0;
+  margin: 0;
+}
+.h-header .header-center .active{
+  color: #9eff33;
+}
+.h-header .header-center a:first-child{
+  margin-left: 0;
+}
+.h-header .header-center a{
+  color:inherit;
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: 2em;
+  text-shadow: 1px 1px #eee;
+}
+.h-header .header-center i{
+  margin-right: 7px;
+  position: relative;
+  top: 3px;
+  font-weight: lighter;
+  text-shadow: 1px 1px #eee;
+}
+.h-header .header-right .social-media{
+  position: relative;
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+.h-header .header-right{
 
-
-
-
-
-
-
-
-
+}
+main{
+  background: url('pattern.png') no-repeat;
+  height: 100vh;
+}
+main .a{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+main .a span{
+  color: #eaeb2d;
+}
+main .a .title h1{
+  font-size: smaller;
+  font-weight: bold;
+  text-shadow: 3px 3px #eee;
+}
+main .a .title hr{
+  border: 4px solid #eaeb2d;
+  width: 27%;
+  margin: 1.5rem 0;
+  border-radius: 1em;
+}
+main p{
+  color: #b4b2c5;
+  text-shadow: 1px 1px #eee;
+}
+main button{
+  padding: .65rem 1rem;
+  background: linear-gradient(90deg, rgba(234,235,45,1) 0%, rgba(197,198,14,1) 100%);
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  outline: 0;
+  border: none;
+  border-radius: .5rem 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+main button i{
+  position: relative;
+  top: 4px;
+  left:4px;
+}
+main .image{
+  background: url('profil.jpeg') no-repeat;
+  height: 100%;
+  background-size: cover;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 15%;
+  box-shadow: 5px 5px 10px 0px #dadada;
+}
 
 
 
