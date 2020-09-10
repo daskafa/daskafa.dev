@@ -69,7 +69,7 @@
     </head>
     <body>
 
-@if (Request::segment(1) == '')
+{{-- @if (Request::segment(1) == '')
   @else
 @if (Auth::check())
   <div class="header">
@@ -115,4 +115,4 @@
       </div>
     </div>
 @endif
-@endif
+@endif --}}

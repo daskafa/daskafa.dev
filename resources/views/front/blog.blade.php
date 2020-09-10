@@ -4,7 +4,8 @@
   @include('front.layouts.widgets')
 @endif
 
-<div class="blog">
+@include('front.layouts.nav')
+{{-- <div class="blog">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -44,7 +45,67 @@
       </div>
     </div>
   </div>
+</div> --}}
+
+
+
+<div class="blog">
+
+  <div class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner-text">
+            <h3>Blog</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <div class="container">
+      <div class="row">
+          @foreach ($blog as $blogs)
+          <div class="col-md-4">
+            <div class="card border-secondary mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-transparent border-secondary">
+                <div class="blog-info">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+                  <div class="date-text">
+                    <p>{{$blogs->created_at->diffForHumans()}}</p>
+                  </div>
+                </div>
+                <hr>
+                <h5>{{$blogs->title}}</h5>
+              </div>
+              <div class="card-body text-secondary">
+                {{-- <h5 class="card-title">Success card title</h5> --}}
+                <p class="card-text">{!!Str::limit($blogs->content, 300, '..')!!}</p>
+              </div>
+              <div class="card-footer bg-transparent border-secondary"> <a href="{{route('single', $blogs->slug)}}">devamı burada</a> </div>
+            </div>
+          </div>
+      @endforeach
+      </div>
+    </div>
+
+  </div>
+
 </div>
+
+
+
+
+
+
+
+
+
 
 
 
