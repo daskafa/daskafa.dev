@@ -628,6 +628,7 @@ main .a .title hr{
 main p{
   color: #b4b2c5;
   text-shadow: 1px 1px #eee;
+  text-align: justify;
 }
 main button{
   padding: .65rem 1rem;
@@ -704,6 +705,8 @@ main .image{
 }
 .blog .content p{
   margin: 0;
+  text-align: justify;
+  word-break: break-word;
 }
 .blog .content .card h5{
   font-weight: bold;

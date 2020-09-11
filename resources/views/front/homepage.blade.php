@@ -28,19 +28,19 @@
   <div class="a">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-5">
           <div class="title">
             <h1>Selam, <br> Ben <span>Yılmaz!</span> </h1>
             <hr>
           </div>
           <div class="text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <p>Merhabalar, hemen özet geçiyorum lisede çok çalışkan bir öğrenci sayılmazdım üniversite olarak büyük bir hedefim olduğu söylenemezdi spor ile ilgilendiğim için besyo denedim fakat bir şekilde olmadı. Bende zaten bilgisayarları seviyorum diyerek puanımın yettiği bilgisayar programcılığı bölümüne gittim. İlk kodumu yazdığımda bende şimşekler çaktı ve ben bu işi severek yaparım dedim. O günden sonra bu yol üzerinde kendimi devamlı olarak geliştirmeye devam ettim, ediyorum. Hakkımda  bölümünde kendimi çok daha detaylı anlatıyorum. Teşekkürler güzel insan.</p>
           </div>
           <div class="button">
             <button type="button">Hadi iletişime geçelim<i class="ri-arrow-right-line"></i></button>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
           <div class="image">
 
           </div>
